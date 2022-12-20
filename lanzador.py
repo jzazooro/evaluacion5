@@ -1,5 +1,6 @@
 from ejercicio1.operaciones import*
 from ejercicio2.contador import*
+from ejercicio3.gestor import*
 from ejercicio4.reloj import*
 
 def main1():
@@ -17,11 +18,19 @@ def main2():
     contador('')
     contador('dec')
 
+def main3():
+    G=Gestor()
+    G.agregar(Personaje("caballero", 4, 2, 4, 2))
+    G.agregar(Personaje("arquero", 2, 4, 1, 8))
+    G.agregar(Personaje("guerrero", 2, 4, 2, 4))
+    G.mostrar()
+    G.borrar('arquero')
+    G.mostrar()
+
 def main4():
-    while True:
-        os.system('cls')
-        print(datetime.datetime.now().strftime('%H:%M:%S'))
-        time.sleep(1)
+    os.system('cls')
+    print(datetime.datetime.now().strftime('%H:%M:%S'))
+    time.sleep(1)
 
 def main():
     a=int(input("Elija el ejercicio a ejecutar: "))
