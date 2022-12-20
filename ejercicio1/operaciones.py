@@ -32,3 +32,12 @@ def dividir(a, b):
         return a/b
     except ZeroDivisionError:
         return"Error: el divisor no puede ser 0"
+
+def main1():
+    a, b, c, d = (10, 5, 0, "Hola")
+    print( "{} + {} = {}".format(a, b, suma(a, b) ) )
+    print( "{} - {} = {}".format(b, d, resta(b, d) ) )
+    print( "{} * {} = {}".format(b, b,  multiplicar(b, b) ) )
+    print( "{} / {} = {}".format(a, c, dividir(a, c) ) )
+
+main1()
