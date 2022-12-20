@@ -57,3 +57,14 @@ class Gestor:
         finally:
             fichero.close()
             print("se han cargado {} personajes del fichero".format(len(self.personajes)))
+
+def main3():
+    G=Gestor()
+    G.agregar(Personaje("caballero", 4, 2, 4, 2))
+    G.agregar(Personaje("arquero", 2, 4, 1, 8))
+    G.agregar(Personaje("guerrero", 2, 4, 2, 4))
+    G.mostrar()
+    G.borrar('arquero')
+    G.mostrar()
+
+main3()

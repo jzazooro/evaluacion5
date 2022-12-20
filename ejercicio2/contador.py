@@ -35,3 +35,13 @@ def contador(*arg):
             return 'Error en el fichero'
     fichero.close()
     return contenido
+
+def main2():
+    contador('inc')
+    contador('inc')
+    contador('inc')
+    contador('dec')
+    contador('')
+    contador('dec')
+
+main2()
